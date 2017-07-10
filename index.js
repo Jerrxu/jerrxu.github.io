@@ -156,16 +156,6 @@ $(document).ready(function() {
 	commands.pwd = function(args) {
 		println(currentFolder.fullPath);
 	};
-	commands.pizza = function(args) {
-		println("Piazza!");
-	};
-	
-	commands.piazza = function(args) {
-		println("Pizza!");
-	};
-	commands.cat = function(args) {
-		println("You're a kitty!");
-	};
 	commands.history = function(args) {
 		for (var i = 0 ; i < commandHistory.length ; i++) {
 			println("&nbsp;" + commandHistory[i]);
