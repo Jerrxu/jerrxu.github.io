@@ -33,6 +33,30 @@ $(document).ready(function() {
 				"</div>"
 			);
 		});
+		new File("something", currentFolder, function() {
+			println("Click <a href='something.txt'>here</a> to see something.");
+			$("#list").append(
+				"<div style='width:100%;height:300px;text-align:center'>" +
+				" 	<iframe style='background: #FFFFFF' frameborder='0' width='458' height='441'  src='something.txt'  scrolling='no'></iframe>" +
+				"</div>" 
+			);
+		});
+		new File("a_thing", currentFolder, function() {
+			println("Click <a href='a thing.txt'>here</a> to see something.");
+			$("#list").append(
+				"<div style='width:100%;height:300px;text-align:center'>" +
+				" 	<iframe style='background: #FFFFFF' frameborder='0' width='458' height='441'  src='a thing.txt'  scrolling='no'></iframe>" +
+				"</div>" 
+			);
+		});
+		new File("cool_things", currentFolder, function() {
+			println("Click <a href='cool things.txt'>here</a> to see something.");
+			$("#list").append(
+				"<div style='width:100%;height:300px;text-align:center'>" +
+				" 	<iframe style='background: #FFFFFF' frameborder='0' width='458' height='441'  src='cool things.txt'  scrolling='no'></iframe>" +
+				"</div>" 
+			);
+		});				
 	}
 
 	function count() {
